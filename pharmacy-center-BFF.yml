@@ -1,0 +1,15 @@
+redis-session:
+  url: redis://localhost:6379
+  prefix: sess
+
+express-session:
+  saveUninitialized: true
+  resave: false
+  secret: foo
+  name: kprxbffsessId
+  cookie:
+    secure: false
+    httpOnly: true
+    maxAge: 3600000
+    path: /
+    domain: localhost
